@@ -1,7 +1,7 @@
 import DS from 'ember-data';
 
 export default DS.Model.extend({
-  set:          DS.belongsTo('setType', { polymorphic: true, async: true }),
+  set:          DS.belongsTo('set', { polymorphic: true, async: true }),
   name:         DS.attr('string'),
   intVal:       DS.attr('number'),
   floatVal:     DS.attr('number'),
